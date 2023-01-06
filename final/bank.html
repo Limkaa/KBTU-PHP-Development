@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/alim/common.css">
+    <link rel="stylesheet" href="styles/alim/bank.css">
+    <title>My bank</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="wrapper">
+        <div class="wrapper__inner">
+            <section class="wrapper__section">
+                <h2 class="text text--md text--bold mb-5">Основная информация</h2>
+                <div class="general">
+                    <div class="card">
+                        <div class="card__section">
+                            <div class="text text--bold mb-3">Ваш основной счет в Jusan</div>
+                            <div class="text text--secondary"><span>1234 1234 1234 1234</span></div>
+                        </div>
+                        <div class="card__section">
+                            <div class="text mb-2">Текущий баланс: <span class="text--bold">23 342 KZT</span></div>
+                            <div class="text">Ваши бонусы: <span class="text--bold">2 213 KZT</span></div>
+                        </div>
+                        <!-- <div class="card__section">
+                            <button class="btn btn--success">Пополнить</button>
+                            <button class="btn">Перевести</button>
+                            <button class="btn">Снять деньги</button>
+                        </div> -->
+                    </div>
+                    <div class="card">
+                        <div class="text text--bold mb-2">Перевод между счетами</div>
+                        <form action="" class="form transfer-money">
+                            <div class="form-control">
+                                <div class="text text--sm text--secondary mb-1">С какого счета</div>
+                                <select name="from_account" id="" class="select">
+                                    <option disabled="disabled" value="0" selected>Основной счет</option>
+                                    <option value="1">Первая карта</option>
+                                    <option value="2">Вторая карта</option>
+                                    <option value="3">Третья карта</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <div class="text text--sm text--secondary mb-1">На номер счета или карты</div>
+                                <input type="text" min="0" name="to_card" class="input mb-1" maxlength="19" placeholder="1234 1234 1234 1234" id="cardNumber">
+                                <div class="text text--sm text--secondary" id="card-issued"></div>
+                                <input type="text" name="to_card_id" class="hidden" value="NULL" id="to_card_id">
+                            </div>
+                            <div class="form-control">
+                                <div class="number text--sm text--secondary mb-1">Сумма</div>
+                                <input type="text" min="0" name="amount" class="input" placeholder="100 000" id="transferAmount">
+                            </div>
+                            <div class="form-control flex align-center">
+                                <div class="text text--sm text--danger hidden" id="transfer-error">Ошибка</div>
+                            </div>
+                            <div class="form-control flex align-center">
+                                <input type="number" min="0" name="fee" class="hidden" value="0" id="fee">
+                                <input type="submit" class="btn btn--sm mr-3 w-full" value="Перевести" id="transfer-button" disabled>
+                            </div>
+                            <div class="form-control flex justify-center flex-col">
+                                <div class="text text--sm mb-1">Комиссия: <span id="fee-amount">0</span> тг.</div>
+                                <div class="text text--sm">Итого: <span id="total-amount">0</span> тг.</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card loans">
+                        <div class="text text--bold mb-2">Кредиты</div>
+                        <div class="card__section">
+                            <ul class="list">
+                                <li class="list__item loan">
+                                    <span class="text text--sm text--secondary">Оформлено</span>
+                                    <span class="text text--sm text--secondary">Сумма</span>
+                                    <span class="text text--sm text--secondary">Выплачено</span>
+                                    <span class="text text--sm text--secondary">Осталось</span>
+                                </li>
+                                <li class="list__item loan">
+                                    <span class="text text--sm">01.01.2020</span>
+                                    <span class="text text--sm">100 000</span>
+                                    <span class="text text--sm">65 000</span>
+                                    <span class="text text--sm">35 000</span>
+                                </li>
+                                <li class="list__item loan">
+                                    <span class="text text--sm">01.01.2020</span>
+                                    <span class="text text--sm">100 000</span>
+                                    <span class="text text--sm">65 000</span>
+                                    <span class="text text--sm">35 000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper__section">
+                <h2 class="text text--md text--bold mb-5">Ваши карты Jusan банка</h2>
+                <div class="banking__accounts">
+                    <div class="card">
+                        <div class="flex justify-between align-center mb-2">
+                            <div class="text text--bold">Карта Jusan</div>
+                            <img src="images/alim/trash.png" style="height: 20px">
+                        </div>
+                        <div class="text text--sm text--secondary mb-3">1234 1234 1234 1234 <span>(MasterCard)</span></div>
+                        <div class="text mb-3">Баланс: <span class="text--bold">23 342 KZT</span></div>
+                    </div>
+
+                    <div class="card card--template">
+                        <div class="text text--bold mb-2">Открыть новую карту Jusan</div>
+                        <div class="text mb-2">Популярных мировых эмитентов</div>
+                        <button class="btn btn--dark btn--sm">Создать</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wrapper__section">
+                <h2 class="text text--md text--bold mb-5">История банковских операций</h2>
+                <div class="card" style="min-height: 300px">
+                    <div class="tabs">
+                        <div class="tabs__nav mb-3">
+                            <div class="tabs__item active">Платежи</div>
+                            <div class="tabs__item">Переводы</div>
+                        </div>
+
+                        <div class="tabs__content active">
+                            <ul class="list">
+                                <li class="list__item payment">
+                                    <span class="text text--secondary">Дата</span>
+                                    <span class="text text--secondary">Категория</span>
+                                    <span class="text text--secondary">Сумма</span>
+                                    <span class="text text--secondary">Бонусы</span>
+                                </li>
+                                <li class="list__item payment">
+                                    <span class="text">01.01.2020</span>
+                                    <span class="text">Прокат велосипедов и самокатов</span>
+                                    <span class="text">100 000</span>
+                                    <span class="text">35 000</span>
+                                </li>
+                                <li class="list__item payment">
+                                    <span class="text">01.01.2020</span>
+                                    <span class="text">Оплата за товар в магазине Jmart</span>
+                                    <span class="text">65 000</span>
+                                    <span class="text">35 000</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__content">
+                            <ul class="list">
+                                <li class="list__item transfer">
+                                    <span class="text text--secondary">Дата</span>
+                                    <span class="text text--secondary">Со счета</span>
+                                    <span class="text text--secondary">На счет</span>
+                                    <span class="text text--secondary">Тип</span>
+                                    <span class="text text--secondary">Сумма</span>
+                                    <span class="text text--secondary">Коммиссия</span>
+                                </li>
+                                <li class="list__item transfer">
+                                    <span class="text">01.01.2020</span>
+                                    <span class="text">1234 1234 1234 1234</span>
+                                    <span class="text">1234 1234 1234 1234</span>
+                                    <span class="text">Перевод</span>
+                                    <span class="text">100 000</span>
+                                    <span class="text">200</span>
+                                </li>
+                                <li class="list__item transfer">
+                                    <span class="text">01.01.2020</span>
+                                    <span class="text">1234 1234 1234 1234</span>
+                                    <span class="text">1234 1234 1234 1234</span>
+                                    <span class="text">Перевод</span>
+                                    <span class="text">100 000</span>
+                                    <span class="text">200</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/alim/bank.js"></script>
+    <script src="js/alim/payment.js"></script>
+</body>
+
+</html>

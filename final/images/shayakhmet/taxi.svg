@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Taxi-72x72_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFEEDF;}
+	.st1{fill:#FFA400;}
+	.st2{fill:url(#Rectangle-Copy_1_);}
+	.st3{fill:#2D3540;}
+	.st4{fill:#FFEECC;}
+	.st5{fill:#A85A00;}
+</style>
+<g id="Taxi-72x72">
+	<circle id="Oval-Copy-10" class="st0" cx="36" cy="36" r="36"/>
+	<g id="Group-Copy-3" transform="translate(17.000000, 19.000000)">
+		<path id="Rectangle" class="st1" d="M4.1,15.5l28.6,0c1.4,0,2.7,1,3,2.3c0.4,1.5,0.7,3.1,0.9,4.6c0.1,1.3,0.2,2.6,0.2,3.9h0
+			c0,1.7-1.4,3.1-3.1,3.1l-30.5,0C1.4,29.4,0,28,0,26.3c0-1.3,0-2.6,0.2-3.9c0.2-1.5,0.5-3.1,0.9-4.6h0C1.4,16.4,2.7,15.5,4.1,15.5z
+			"/>
+		
+			<linearGradient id="Rectangle-Copy_1_" gradientUnits="userSpaceOnUse" x1="-639.8333" y1="371.4908" x2="-639.8333" y2="368.9244" gradientTransform="matrix(28.5 0 0 -10.8182 18253.6562 4006.5454)">
+			<stop  offset="0" style="stop-color:#9AA6B5"/>
+			<stop  offset="1" style="stop-color:#616D7E"/>
+		</linearGradient>
+		<path id="Rectangle-Copy" class="st2" d="M11,4.6h14.9c1.2,0,2.4,0.7,2.9,1.9l3.9,8.9H4.2l3.9-8.9C8.6,5.4,9.7,4.6,11,4.6z"/>
+		<path id="Rectangle-Copy-2" class="st1" d="M16.4,0h4.1c0.7,0,1.3,0.4,1.5,1.1l1.2,3.6h-9.5l1.2-3.6C15.1,0.4,15.7,0,16.4,0z"/>
+		<path id="Rectangle-Copy-3" class="st3" d="M2.6,29.4h7.9l-1.2,3.6C9.1,33.6,8.5,34,7.8,34H4.1c-0.9,0-1.6-0.7-1.6-1.6V29.4z"/>
+		<path id="Rectangle-Copy-4" class="st3" d="M26.3,29.4h7.9v3.1c0,0.9-0.7,1.6-1.6,1.6H29c-0.7,0-1.3-0.4-1.5-1.1L26.3,29.4z"/>
+		<path id="Rectangle-Copy-107" class="st4" d="M4.1,20.1h4.3c0.8,0,1.4,0.6,1.4,1.4c0,0.2,0,0.4-0.1,0.5l-0.4,1
+			c-0.2,0.6-0.8,1-1.4,1H4.1c-0.9,0-1.6-0.7-1.6-1.6v-0.7C2.6,20.8,3.3,20.1,4.1,20.1z"/>
+		<path id="Rectangle-Copy-108" class="st4" d="M28.4,20.1h4.3c0.9,0,1.6,0.7,1.6,1.6v0.7c0,0.9-0.7,1.6-1.6,1.6H29
+			c-0.6,0-1.2-0.4-1.4-1l-0.4-1c-0.3-0.7,0-1.5,0.8-1.8C28,20.1,28.2,20.1,28.4,20.1z"/>
+		<path id="Rectangle-Copy-109" class="st5" d="M14.5,23.2h7.8c1.4,0,2.7,1,3,2.4l1,3.8H10.5l1-3.8C11.8,24.2,13.1,23.2,14.5,23.2z"
+			/>
+	</g>
+</g>
+</svg>

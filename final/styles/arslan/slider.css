@@ -1,0 +1,34 @@
+.ui-slider{
+    margin-left: 10.3px;
+    margin-right: 10.3px;
+}
+
+.ui-widget.ui-widget-content{
+    border: none;
+}
+
+.ui-slider-horizontal{
+    height: 2px;
+}
+
+.ui-widget-header{
+    background-color: rgb(255, 72, 16);
+}
+
+.ui-widget-content{
+    background-color: rgb(190, 190, 182);
+}
+
+.ui-slider .ui-slider-handle {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(255, 72, 16);
+    border-radius: 50%;
+    outline: none;
+    margin-top: -5px;
+}
+
+.ui-slider-handle:hover, .ui-slider-handle:active{
+    background-color: white;
+}

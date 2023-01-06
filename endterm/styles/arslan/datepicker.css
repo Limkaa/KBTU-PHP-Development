@@ -1,0 +1,94 @@
+.container{
+    font-family: 'Open Sans', Arial, sans-serif;;
+}
+
+.container.lock-plugin .calendar>.days-grid>.day.not-available {
+    background-color: #fff;
+    color: #9ea3b8;
+    font-style: normal;
+    pointer-events: none;
+}
+
+.daynames-row{
+    background-color: #5590c6!important;
+}
+
+.calendar>.daynames-row>.dayname{
+    text-align: center;
+    font-size: 12px;
+    width: 32px;
+    padding: 1px 0;
+    color: #fff;
+
+    float: left;
+    margin: 1px;
+    font-weight: 600;
+}
+
+.container.show{
+    box-shadow: none;
+    border: 1px solid #9ea3b7;
+    left: -410px !important;
+}
+
+.calendars:not(.grid-1) .calendar>.header .previous-button{   
+    position: absolute;
+    right: 40px;
+}
+
+.calendar>.days-grid>.day{
+    font-weight: 600;
+    text-align: center;
+    width: 29px;
+    height: 2em;
+    line-height: 24px;
+    padding: 2px 3px 2px 2px;
+}
+
+.container>header {
+    background-color: white;
+    padding: 15px;
+    padding-top: 8px;
+    border-bottom: 2px solid #9ea3b7;
+}
+
+.lock-plugin > header{
+    display: flex;
+    justify-content: center;
+}
+
+.datepicker-btn{
+    background-color: #fff;
+    color: rgba(0,13,67,.87);
+    border: 1px solid #9ea3b7;
+    line-height: 25px;
+    width: 132px;
+    font-size: 0.75rem;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.datepicker-btn.active{
+    color: #fff;
+    background: #5590c6
+}
+
+.calendar{
+    padding-top: 0;
+}
+
+.calendar>.header .month-name {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: initial;
+}
+
+.calendars:not(.grid-1) .calendar>.header .month-name{
+    text-align: initial;
+}
+
+.month-name{
+    text-transform: uppercase;
+    color: #212c5b;
+}

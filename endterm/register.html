@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Зарегистрироваться</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://www.chocotravel.com/favicon.png">
+    <link rel="stylesheet" href="styles/shayakhmet/chocotravel_login.css">
+</head>
+
+<body>
+    <div id="login_app">
+        <div class="main-layout">
+            <div class="main-layout__wrap">
+                <img src="images/shayakhmet/chocotravel_logo.svg" alt="Chocotravel" style="margin-bottom: 20px; max-width: 100%; object-fit: contain; height: 54px;">
+                <div class="reg-by-email">
+                    <div class="main-card">
+                        <div class="main-card__header">
+                            <h2 class="main-card__title">Регистрация Choco-аккаунта</h2>
+                            <p class="main-card__description">Для завершения регистрации на проектах ChocoFamily введите почту и пароль</p>
+                        </div>
+                        <div class="main-card__content">
+                            <div class="reg-by-email__login-wrapper">
+                                <div class="input-field" style="margin-bottom: 20px;">
+                                    <div class="input-field__wrapper">
+                                        <input required id="email" class="input-field__input" onkeyup="success()" type="email" placeholder="Введите почту" autocomplete="off">
+                                    </div>
+                                </div>
+                                <a href="login.html" class="router-link-active">Назад</a>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-field__wrapper">
+                                    <input required id="password" class="input-field__input" onkeyup="success()" type="password" placeholder="Введите пароль" autocomplete="off">
+                                    <img class="input-field__clear" onclick="clearInput()" src="images/shayakhmet/close-btn.svg" alt="Очистить поле">
+                                </div>
+                            </div>
+                            <span class="invalid-feedback email_err"></span>
+                        </div>
+                        <div class="main-card__footer">
+                            <div class="main-card__bottom-btn">
+                                <button id="submit" class="main-button main-button--black main-button--full-width" disabled>Продолжить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/shayakhmet/register.js'></script>
+</body>
+
+</html>

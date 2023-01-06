@@ -1,0 +1,792 @@
+/*=============
+  Genereal
+===============*/
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-main: #f6f6f5;
+  --color-accent: rgb(255, 115, 72);
+  --color-accent-dark: rgb(255, 72, 16);
+  --color-white: #FFFFFF;
+  --color-text-dark: rgb(32, 31, 31);
+  --color-text-grey: rgb(170, 173, 178);
+  --color-text-dark-grey: rgb(137, 141, 148);
+  --color-green: rgb(155, 208, 80);
+}
+
+body {
+	margin: 0;
+	background-color: var(--color-main);
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  min-height: 70vh;
+}
+
+.mx-width{
+  max-width: 1440px;
+  margin: auto;
+}
+
+.pd-std{
+  padding: 0 24px;
+}
+
+.pd-sm{
+  padding: 0 15px;
+}
+
+/*=============
+  Typography
+===============*/
+
+/* fonts */
+* {
+	font-family: Arial, serif;
+}
+
+.catalog-link{
+  font-size: 1em;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.catalog-text{
+  font-family: inherit;
+  margin-left: 8px;
+  font-size: 1.1333em;
+}
+
+.jmart-logo-text{
+  color: var(--color-accent);
+  margin-left: 8px;
+  padding-right: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+
+.footer-link-text{
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer-social-contacts-link-text{
+  margin: 0;
+  color: var(--color-text-dark-grey);
+}
+
+.category-header{
+  font-size: 1.8em;
+  margin-bottom: 40px;
+}
+
+.category-card-text{
+  color: var(--color-text-dark);
+  text-align: right;
+}
+
+.price-shown{
+  color: var(--color-text-dark);
+  font-size: 16px;
+}
+
+.price-input-text{
+  font-size: 9px;
+  color: var(--color-text-grey);
+  line-height: 11px;
+}
+
+.price-tenge{
+  color: var(--color-text-grey);
+  font-size: 16px;
+}
+
+.price-line{
+  color: var(--color-text-grey);
+  font-size: 18px;
+}
+
+.item-not-found-header{
+  color: var(--color-text-grey);
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.item-not-found-text{
+  color: var(--color-text-grey);
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.item-not-found-btn{
+  color: var(--color-white);
+  font-size: 11px;
+}
+
+.product-card-price{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.product-card-accent{
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-white);
+}
+
+.product-card-accent.bg{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-card-text{
+  color: var(--color-text-dark-grey);
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.product-card-bonuses{
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.product-card-btn{
+  color: var(--color-white);
+  font-size: 15px;
+}
+
+.products-sort{
+  color: var(--color-text-dark-grey);
+  padding-right: 18px;
+  font-size: 15px;
+}
+
+.sort-btn{
+  color: var(--color-text-dark-grey);
+  font-size: 15px;
+}
+
+.sort-btn.active{
+  color: var(--color-accent-dark);
+}
+
+.more-btn-flex{
+  color: var(--color-text-dark);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.landing-display-products-header-text{
+  font-size: 28.8px;
+}
+
+.products-header-text{
+  color: var(--color-text-dark-grey);
+  font-size: 1em;
+}
+
+.jmart-searchbar-container{
+  color: var(--color-text-dark);
+  font-size: 16px;
+}
+
+.download-app-text{
+  font-size: 21px;
+}
+
+.filter-toggler {
+	color: var(--color-text-dark);
+	font-size: 21px;
+}
+
+.landing-category-card-sm-text{
+  font-size: 17px;
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+.jmart-searchbar{
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/*=============
+  Layout
+===============*/
+/* header */
+.header-location{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-navigation,
+.supplementary-header{
+  display: flex;
+  align-items: center;
+}
+
+.supplementary-header{
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-navigation{
+  gap: 10px;
+}
+
+.header-navigation-link{
+  background-color: var(--color-accent);
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.jmart-header{
+  display: flex;
+  max-height: 48px;
+}
+
+.catalog-link{
+  background: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.jusan-logo{
+  background-color: var(--color-accent-dark);
+  padding: 8.5px;
+  border-radius: 16px;
+}
+
+.jmart-logo-container{
+  display: flex;
+  align-items: center;
+}
+
+.jmart-logo-img{
+  height: 48px;
+  background-color: var(--color-accent);
+  padding: 8.5px;
+  border-radius: 16px;
+}
+
+.header-main{
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-left: 0;
+}
+
+.sticky-header{
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 30;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.header-container{
+  padding: 16px 24px;
+}
+
+.search-form{
+  flex: 1 0 0%;
+}
+
+.jmart-searchbar-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 17px;
+  background-color: var(--color-main);
+  margin: 0px 15px;
+}
+
+.jmart-searchbar{
+  padding: 8px 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1 1 auto;
+  border: none;
+  font-style: inherit;
+  min-height: 40px;
+  background-color: transparent;
+
+  outline: none;
+}
+
+.btn-search-container{
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.btn-search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-right: 16px;
+  padding: 0;
+  width: 21px;
+  height: 21px;
+}
+
+/* footer */
+footer{
+  background-color: var(--color-white);
+}
+
+.footer-app{
+  display: flex;
+  gap: 33px;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-container-container{
+  min-width: 116px;
+}
+
+.qr-container{
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-bg-img{
+  position: absolute;
+  inset: 0px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.qr-img-bg{
+  background-image: url("../../images/arslan/qr-code.png");
+}
+
+.appstore-img-bg{
+  background-image: url("../../images/arslan/appstore.png");
+}
+
+.playmarket-img-bg{
+  background-image: url("../../images/arslan/playmarket.png");
+}
+
+.phone-bonus-img-bg{
+  background-image: url("../../images/arslan/phone-bonus.png");
+}
+
+.download-app-text{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links{
+  background-color: var(--color-main);
+  padding: 16px 25px;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download-app-links-flex{
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social{
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px 39px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-links,
+.footer-social-contacts{
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-contacts-link{
+  display: flex;
+  align-items: center;
+}
+
+/* category */
+.display-category-grid{
+  background-color: var(--color-white);
+  padding: 16px;
+  border-radius: 24px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.category-card{
+  border-radius: 12px;
+  border: 2px solid rgba(201, 213, 225, 0.2);
+  position: relative;
+}
+
+.category-card-text{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  width: 57%;
+  white-space: initial;
+  overflow-wrap: break-word;
+}
+
+.category-section{
+  margin: 24px 0;
+}
+
+/* products */
+.products-header{
+  margin: 32px 0;
+}
+
+.products-dot{
+  margin: 0 10px;
+  cursor: default;
+}
+
+.products-main-flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.filter-container{
+  flex: 0 0 16.6667%;
+  max-width: 16.6667%;
+  padding: 0px 15px;
+}
+
+.products-container{
+  flex: 0 0 83.3333%;
+  max-width: 83.3333%;
+  padding: 0px 15px;
+}
+
+.products-showcase{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0px, 1fr));
+  gap: 20px;
+}
+
+.landing-display-products-main{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0px, 1fr));
+  gap: 20px;
+}
+
+.product-card{
+  background-color: var(--color-white);
+  padding: 16px;
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+}
+
+.product-img-container{
+  text-align: center;
+}
+
+.product-img{
+  max-height: 152.5px;
+  margin-bottom: 8px;
+}
+
+.product-img.landing{
+  max-height: 160px;
+  margin-bottom: 8px;
+}
+
+.product-card-accent{
+  background-color: var(--color-accent);
+  border-radius: 9px;
+  padding: 3px 8px;
+}
+
+.product-card-accent.bg{
+  padding: 3px 10px;
+  border-radius: 13px;
+  margin-right: 3px;
+}
+
+.product-card-price-container{
+  margin: 4px 0 8px 0;
+}
+
+.product-card-bonuses-container{
+  margin: 11px 0;
+  margin-top: 15px;
+}
+
+.product-card-bonuses{
+  background-color: var(--color-green);
+  border-radius: 13px;
+  padding: 3px 6px;
+}
+
+.product-card-text.name{
+  margin-bottom: 12px;
+  width: 100%;
+  height: 70px;
+}
+
+.product-card-btn{
+  cursor: pointer;
+  background-color: var(--color-accent-dark);
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 17px;
+  padding: 8px 0px;
+}
+
+.filter-toggler {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+  width: 100%;
+	display: flex;
+	text-align: center;
+  justify-content: space-between;
+  outline: none;
+  padding: 0;
+}
+
+.filter-toggler-text{
+  margin: 0;
+}
+
+.cost-filter-container{
+  visibility: hidden;
+	max-height: 0;
+	overflow: hidden;
+  transition: visibility 0.3s, max-height 0.3s ease-in-out;
+  padding: 20px 0;
+}
+
+.price-input-container{
+  margin-bottom: 25px;
+}
+
+.cost-filter-container.active {
+	visibility: visible;
+	max-height: 340px;
+}
+
+.price-input-flex{
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-from, .price-to{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 42%;
+}
+
+.price-dynamic-input{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  border-bottom: 1.5px solid rgba(190, 190, 182, 0.2);
+}
+
+.price-shown{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1 1 auto;
+  width: 1%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.price-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 27px;
+  height: 38px;
+}
+
+/* arrows */
+.arrow{
+  margin-top: 2px;
+  transform: rotate(180deg);
+	transition: 0.2s ease-in-out;
+}
+
+.search-filter-companies.active > .arrow {
+	transform: translate(8px, 1px) rotate(-225deg);
+}
+
+.filter-toggler.active > .arrow {
+	transform: rotate(0deg);
+}
+
+/* .arrow {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-left: 1px solid #cfe9f6;
+	border-bottom: 1px solid #cfe9f6;
+	transform: translate(8px, -3.5px) rotate(-45deg);
+	transition: 0.2s ease-in-out;
+} */
+
+/* products showcase */
+
+.item-not-found-container{
+  text-align: center;
+  max-width: 250px;
+  margin: 30px auto;
+}
+
+.item-not-found-btn{
+  background-color: var(--color-accent-dark);
+  border-radius: 15px;
+  padding: 8px 30px;
+}
+
+/* filter toggler */
+.products-sort{
+  display: flex;
+  margin: 18px 0;
+}
+
+.sort-btn{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 5px;
+}
+
+/* landing */
+.landing-categories-links{
+  background-color: var(--color-white);
+  border-radius: 24px;
+  padding: 16px;
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.landing-category-card-sm{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 170px;
+}
+
+.landing-category-card-sm-text{
+  margin: 0;
+}
+
+.landing-category-card-sm-text{
+  display: inline;
+  max-width: 110px;
+}
+
+.landing-divisor{
+  margin-top: 34px;
+}
+
+.landing-display-products-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-btn-flex{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  border-radius: 20px;
+  background-color: var(--color-white);
+  padding: 7px 8px;
+}
+
+.landing-display-products-header-text{
+  margin: 0 8px 24px 0;
+}
+
+.landing-categories-bonuses{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8.6px;
+}
+
+.landing-categories-bonuses-link{
+  border-radius: 26px;
+  overflow: hidden;
+}

@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family: 'Inter', Verdana, sans-serif;
+    background-color: #F6F6F5;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+
+.hello-user {
+    text-align: center;
+}
+
+.hello-user--login {
+    text-decoration: underline;
+    color: #201f1f;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.login-logo {
+    width: 12%;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+.login-form {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-form form,
+.change-form {
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.login-form input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.change-form input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.login-form input:focus,
+.change-form input:focus {
+    border: 2px solid #FF6700;
+}
+
+label {
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.login-form button,
+.change-form button {
+    cursor: pointer;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+.about-you button {
+    cursor: pointer;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+.about-you button:hover {
+    background-color: #FF6700;
+}
+
+.login-form button:hover,
+.change-form button:hover {
+    background-color: #FF6700;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.success {
+    background: #D4EDDA;
+    color: #40754C;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+
+
+.ca {
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #444;
+}
+
+.ca:hover {
+    text-decoration: underline;
+    color: #FF6700;
+}
+
+.welcome-user {
+    color: #201f1f;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about-you {
+    width: 800px;
+    height: 500px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: left;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.avatar {
+    width: 100px;
+}
+
+.about-you h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FF6700;
+}
+
+.about-you p {
+    margin-bottom: 10px;
+}
+
+.logout {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.logout a {
+    color: black;
+}
+
+.logout a:hover {
+    color: #FF6700;
+    text-decoration: underline;
+}
+
+.avatars-check {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.change-avatar {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    top: 140px;
+    left: 5px;
+}

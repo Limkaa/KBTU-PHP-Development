@@ -1,0 +1,28 @@
+.ui-slider{
+    margin-left: 0.45rem;
+}
+
+.ui-widget.ui-widget-content{
+    border: none;
+}
+
+.ui-slider-horizontal{
+    height: 3px;
+}
+
+.ui-widget-header{
+    background-color: rgb(157, 222, 242);
+}
+
+.ui-widget-content{
+    background-color: rgba(157, 222, 242, 0.5)
+}
+
+.ui-slider .ui-slider-handle {
+    background-color: rgb(157, 222, 242);
+    border: none;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    outline: none;
+}
